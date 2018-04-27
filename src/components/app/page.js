@@ -6,7 +6,7 @@ import Header from './page/header';
 import Whom from './page/whom';
 import bgImg from '../../img/tommy-343498-unsplash.png';
 
-type TWhom = 'me' | 'ya mum';
+export type TWhom = 'me' | 'ya mum';
 type TState = {
   whom: TWhom
 };
@@ -35,7 +35,9 @@ export default class Page extends PureComponent<TProps, TState> {
     return (
       <Wrap>
         <Header />
-        <div>Who are you booking a trip for?</div>
+        <Whom
+          setWhom={this.setWhom}
+        />
         <div>x</div>
       </Wrap>
     );
