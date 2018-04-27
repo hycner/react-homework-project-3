@@ -1,17 +1,27 @@
 // @flow
 import React, {PureComponent} from 'react';
 
-import Flight from './app/flight';
+import Header from './app/header';
+import Page from './app/page';
+import styled from 'styled-components';
 
 type TProps = {
 
 };
 
+const Wrap = styled.div`
+  display: flex;
+  flex-direction: column; 
+  height: 100vh;
+`;
+
 export default class App extends PureComponent<TProps> {
   render() {
     return (
-      <div>
-      </div>
+      <Wrap>
+        <Header />
+        <Page />
+      </Wrap>
     );
   }
 }

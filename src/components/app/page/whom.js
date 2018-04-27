@@ -3,18 +3,18 @@ import React, {PureComponent} from 'react';
 import styled from 'styled-components';
 
 type TProps = {
-
+  setWhom: () => void;
 };
 
 const Wrap = styled.div`
   
 `;
 
-export default class Flight extends PureComponent<TProps> {
+export default class Whom extends PureComponent<TProps> {
   render() {
     return (
       <Wrap>
-        kk
+        Who are you booking a trip for?
       </Wrap>
     );
   }
