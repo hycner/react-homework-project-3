@@ -40,6 +40,7 @@ const sections = {
 
 const Wrap = styled.div`
   width: 213px;
+  cursor: pointer;
   
   ${props => props.active && css`
     background-color: #ffc100;
