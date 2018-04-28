@@ -44,8 +44,6 @@ export default class Navigation extends PureComponent<TProps, TState> {
   };
 
   render() {
-    console.log(this.state.selected);
-
     return (
       <Wrap>
         <Section
