@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 import Header from './page/header';
 import Whom from './page/whom';
+import Booking from './page/booking';
 import bgImg from '../../img/tommy-343498-unsplash.png';
 
 export type TWhom = 'me' | 'ya mum';
@@ -35,10 +36,8 @@ export default class Page extends PureComponent<TProps, TState> {
     return (
       <Wrap>
         <Header />
-        <Whom
-          setWhom={this.setWhom}
-        />
-        <div>x</div>
+        <Whom setWhom={this.setWhom} />
+        <Booking />
       </Wrap>
     );
   }
